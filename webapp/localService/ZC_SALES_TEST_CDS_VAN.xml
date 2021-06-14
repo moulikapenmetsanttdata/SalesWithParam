@@ -1,0 +1,21 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='NGSBW')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='NGSBW')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='NGSBW')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zc_sales_test_cds/$metadata"><edmx:Include Namespace="ZC_SALES_TEST_CDS" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zc_sales_test_cds_van.v1">
+			<Annotations Target="ZC_SALES_TEST_CDS.ZC_Sales_TestType/i_vbeln"><Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Hidden"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_SALES_TEST_CDS.ZC_Sales_TestType">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Sales Order"/><PropertyValue Property="Value" Path="vbeln"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Created Date"/><PropertyValue Property="Value" Path="erdat"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Net Value"/><PropertyValue Property="Value" Path="netwr"/></Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
