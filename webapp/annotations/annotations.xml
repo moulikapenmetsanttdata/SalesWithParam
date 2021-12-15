@@ -16,12 +16,12 @@
 					<Collection>
 						<Record Type="UI.CollectionFacet">
 							<PropertyValue Property="ID" String="GeneralInformation"/>
-							<PropertyValue Property="Label" String="{@i18n>@GeneralInfoFacetLabel}"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;@GeneralInfoFacetLabel}"/>
 							<PropertyValue Property="Facets">
 								<Collection>
 									<Record Type="UI.ReferenceFacet">
-										<PropertyValue Property="Label" String="{@i18n>@GeneralInfoFacetLabel}"/>
-										<PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
+										<PropertyValue Property="Label" String="{@i18n&gt;@GeneralInfoFacetLabel}"/>
+										<PropertyValue Property="Target" AnnotationPath="@UI.LineItem"/>
 									</Record>
 								</Collection>
 							</PropertyValue>
